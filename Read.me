@@ -1,0 +1,20 @@
+This file outlines the process for preparing the UCI HAR Dataset.
+
+This dataset was retrieved from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+It was loaded into the working directory using RetrieveLoadZipFiles.R.  There are no parameters to the script.
+
+It was processed into tidy form using run_analysis.R. There are no parameters to the script.
+
+The script loads the files into the environment and merges the training and test sets.
+
+Labels are applied to the activities and measures from the activity_labels and features files.
+
+Measures are filtered down to mean() and std() measures only.
+
+The mean of each combination of subject and activity are calculated and stored in the data.mean.txt file.
+
+The data.mean.txt file is exported.
+
+
